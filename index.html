@@ -1,339 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahin Sheikh | Profile</title>
-    <style>
-        /* ফন্ট ইমপোর্ট */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahin Sheikh — Web Developer &amp; Tech Enthusiast</title>
+<meta name="description" content="Mahin Sheikh is a college student, tech enthusiast, and web developer from Bangladesh building clean web experiences, Cloudflare-powered applications, automation systems, and practical digital products.">
+<link rel="canonical" href="https://skmahin.com/">
+<meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F17" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mahin Sheikh">
+<meta property="og:title" content="Mahin Sheikh — Web Developer &amp; Tech Enthusiast">
+<meta property="og:description" content="College student, tech enthusiast, and web developer from Bangladesh building clean web experiences, Cloudflare-powered applications, and automation systems.">
+<meta property="og:url" content="https://skmahin.com/">
+<meta property="og:image" content="https://skmahin.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mahin Sheikh — College Student, Tech Enthusiast, Web Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mahin Sheikh — Web Developer &amp; Tech Enthusiast">
+<meta name="twitter:description" content="College student, tech enthusiast, and web developer from Bangladesh building clean web experiences and practical digital products.">
+<meta name="twitter:image" content="https://skmahin.com/og.png">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Mahin Sheikh","url":"https://skmahin.com/","email":"contact@skmahin.com","jobTitle":"Web Developer","description":"College student, web developer, and tech enthusiast exploring modern web development, Cloudflare, automation, APIs, and backend systems.","address":{"@type":"PostalAddress","addressLocality":"Khulna","addressCountry":"BD"},"knowsAbout":["Web development","Cloudflare","Automation","APIs","Backend systems"]}
+</script>
+<script>
+(function(){var r=document.documentElement,t;try{t=localStorage.getItem("theme")}catch(e){}
+r.dataset.theme=(t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"));r.classList.add("js")})();
+</script>
+<style>
+:root{
+  --bg:#F8FAFC;--surface:#FFFFFF;--text:#0F172A;--muted:#526077;--line:#E2E8F0;
+  --accent:#0066FF;--accent-ink:#FFFFFF;--accent-soft:rgba(0,102,255,.08);--ok:#16A34A;
+  --shadow:0 1px 2px rgba(15,23,42,.05),0 12px 32px -12px rgba(15,23,42,.12);
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);--wrap:1120px;--nav:64px;
+}
+:root[data-theme="dark"]{
+  --bg:#0B0F17;--surface:#111827;--text:#E8EDF5;--muted:#9AA7BC;--line:#1F2937;
+  --accent:#4D8DFF;--accent-ink:#06101F;--accent-soft:rgba(77,141,255,.12);--ok:#34D399;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px -16px rgba(0,0,0,.6);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 16px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background-color .3s,color .3s}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+svg{display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--accent);color:var(--accent-ink);padding:8px 14px;border-radius:8px;z-index:100;transition:top .2s}
+.skip:focus{top:12px}
+.wrap{width:min(100% - 40px,var(--wrap));margin-inline:auto}
+section{padding:clamp(64px,10vw,120px) 0}
+.label{font-family:var(--mono);font-size:.8125rem;color:var(--muted);margin-bottom:20px}
+h2{font-weight:500;font-size:clamp(1.75rem,4.2vw,2.75rem);line-height:1.12;letter-spacing:-.025em;max-width:20ch;text-wrap:balance}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:8px;vertical-align:1px;box-shadow:0 0 0 0 rgba(22,163,74,.5);animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px rgba(22,163,74,0)}100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}}
 
-        /* রিসেট এবং বেসিক সেটিংস */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;height:var(--nav);border-bottom:1px solid transparent;transition:background-color .3s,border-color .3s}
+header.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:var(--line)}
+.bar{height:var(--nav);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.875rem;letter-spacing:.08em}
+.mark{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-size:.75rem;font-weight:700;letter-spacing:-.02em}
+.mark img{width:100%;height:100%;display:block;object-fit:cover;border-radius:inherit}
+.links{display:flex;align-items:center;gap:28px}
+.links a.nl{font-size:.875rem;color:var(--muted);position:relative;padding:6px 0;transition:color .2s}
+.links a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--text);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.links a.nl:hover,.links a.nl.on{color:var(--text)}
+.links a.nl:hover::after,.links a.nl.on::after{transform:scaleX(1)}
+.status{font-family:var(--mono);font-size:.75rem;color:var(--muted);padding:6px 12px;border:1px solid var(--line);border-radius:999px;white-space:nowrap}
+.status .dot{margin-right:6px}
+.tools{display:flex;align-items:center;gap:6px}
+.ib{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;color:var(--muted);transition:color .2s,background-color .2s}
+.ib:hover{color:var(--text);background:var(--accent-soft)}
+.ib svg{width:18px;height:18px}
+.menu-btn{display:none}
+.sun{display:none}
+:root[data-theme="dark"] .sun{display:block}
+:root[data-theme="dark"] .moon{display:none}
 
-        body {
-            background-color: #ffffff; /* পিওর হোয়াইট ব্যাকগ্রাউন্ড */
-            color: #2d3142;            /* সফট চারকোল টেক্সট */
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 50px 20px;
-        }
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 22px;border-radius:12px;font-weight:500;font-size:.9375rem;border:1px solid var(--line);transition:transform .2s var(--ease),border-color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:0 6px 18px -8px var(--accent)}
+.btn.primary:hover{box-shadow:0 10px 22px -8px var(--accent)}
+.btn.ghost{background:var(--surface)}
+.btn.ghost:hover{border-color:var(--muted)}
+.btn svg{width:16px;height:16px;transition:transform .2s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
 
-        /* মেইন কন্টেইনার */
-        .wrapper {
-            max-width: 650px;
-            width: 100%;
-            text-align: center;
-        }
+/* Hero */
+.hero{padding-top:calc(var(--nav) + clamp(40px,8vw,96px));padding-bottom:clamp(56px,8vw,96px)}
+.hero-grid{display:grid;gap:56px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:.75rem;color:var(--accent);margin-bottom:24px;letter-spacing:.02em}
+h1{font-weight:500;font-size:clamp(2.25rem,7vw,4.25rem);line-height:1.05;letter-spacing:-.035em;text-wrap:balance;overflow-wrap:break-word}
+.lead{color:var(--muted);font-size:clamp(1.0625rem,1.6vw,1.1875rem);max-width:52ch;margin-top:24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.status-line{margin-top:28px;font-size:.875rem;color:var(--muted)}
 
-        /* প্রোফাইল আইকন এরিয়া */
-        .avatar-space {
-            margin-bottom: 20px;
-        }
+/* Hero signature: the stack, as a map */
+.map-card{border:1px solid var(--line);border-radius:16px;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
+.map-top{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.map-top .mark{width:34px;height:34px;border-radius:10px;font-size:.875rem;overflow:hidden}
+.map-top b{font-weight:500;display:block;line-height:1.3}
+.map-top small{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.map{position:relative;margin:22px 20px 24px 30px;padding-left:28px}
+.map::before{content:"";position:absolute;left:5px;top:12px;bottom:12px;width:1px;background:var(--line)}
+.map::after{content:"";position:absolute;left:3px;top:6px;width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);opacity:0;animation:signal 2.6s var(--ease) .8s 1 forwards}
+@keyframes signal{10%{opacity:1}85%{opacity:1}to{top:calc(100% - 12px);opacity:0}}
+.map li{position:relative;padding:0 0 22px}
+.map li:last-child{padding-bottom:0}
+.map li::before{content:"";position:absolute;left:-28px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--surface);border:2px solid var(--line)}
+.map li.end::before{background:var(--accent);border-color:var(--accent)}
+.map b{display:block;font-weight:500;line-height:1.5}
+.map small{display:block;font-family:var(--mono);font-size:.75rem;color:var(--muted);line-height:1.5}
 
-        .avatar-space svg {
-            width: 64px;
-            height: 64px;
-            fill: none;
-            stroke: #df8543; /* ক্ল্যাসিক ওয়ার্ম অরেঞ্জ টোন */
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
+/* At a glance */
+.strip{padding:0}
+.strip dl{display:grid;grid-template-columns:repeat(2,1fr);border-block:1px solid var(--line)}
+.strip dl>div{padding:24px 20px 24px 0}
+.strip dt{font-family:var(--mono);font-size:.75rem;color:var(--muted);margin-bottom:6px}
+.strip dd{font-weight:500;font-size:.9375rem;line-height:1.45}
 
-        /* নাম ও অ্যাক্টিভ স্ট্যাটাস ইন্ডিকেটর */
-        .status-indicator {
-            display: inline-flex;
-            align-items: center;
-            background-color: #f5f6f8; 
-            border: 1px solid #e2e4e9;
-            padding: 8px 18px;
-            border-radius: 100px;
-            font-size: 0.95rem;
-            color: #2d3142;
-            font-weight: 600;
-            margin-bottom: 30px;
-            letter-spacing: 0.2px;
-        }
+/* About */
+.about-grid{display:grid;gap:48px}
+.about-copy{margin-top:32px}
+.about-copy p{color:var(--muted);font-size:1.0625rem;max-width:58ch}
+.about-copy p+p{margin-top:18px}
+.about-copy p:last-child{color:var(--text)}
+.care h3{font-family:var(--mono);font-weight:400;font-size:.8125rem;color:var(--muted);margin-bottom:8px}
+.care li{display:grid;gap:2px;padding:20px 0;border-top:1px solid var(--line)}
+.care li:last-child{border-bottom:1px solid var(--line)}
+.care b{font-weight:500}
+.care p{color:var(--muted);font-size:.9375rem}
 
-        .live-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #4b8f56; /* সফট গ্রিন */
-            border-radius: 50%;
-            margin-right: 10px;
-            position: relative;
-        }
+/* What I build */
+.build{padding-top:0}
+.build-head,.work-head{margin-bottom:clamp(32px,5vw,56px)}
+.builds li{display:grid;grid-template-columns:44px 1fr;gap:4px 16px;padding:28px 0;border-top:1px solid var(--line)}
+.builds li:last-child{border-bottom:1px solid var(--line)}
+.builds .k{grid-row:span 2;width:40px;height:40px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.builds .k svg{width:20px;height:20px}
+.builds h3{font-weight:500;font-size:clamp(1.25rem,2.6vw,1.625rem);letter-spacing:-.02em;line-height:1.25}
+.builds p{color:var(--muted);max-width:52ch}
 
-        .live-dot::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: #4b8f56;
-            border-radius: 50%;
-            animation: blink 2s infinite;
-        }
+/* Work */
+.work{padding-top:0}
+.proj{display:grid;gap:20px 48px;padding:36px 0;border-top:1px solid var(--line)}
+.proj:last-child{border-bottom:1px solid var(--line)}
+.proj .main{display:grid;gap:14px;align-content:start}
+.proj .side{display:grid;gap:18px;justify-items:start;align-content:start}
+.proj h3{font-weight:500;font-size:clamp(1.75rem,5vw,3rem);line-height:1.08;letter-spacing:-.03em;overflow-wrap:anywhere;transition:transform .35s var(--ease)}
+.proj p{color:var(--muted);max-width:56ch}
+.proj:hover h3{transform:translateX(6px)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags li{font-family:var(--mono);font-size:.75rem;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--surface)}
+.view{display:inline-flex;align-items:center;gap:8px;font-size:.875rem;font-weight:500;color:var(--muted)}
+.view svg{width:15px;height:15px;transition:transform .25s var(--ease)}
+a.view{color:var(--accent)}
+a.view:hover svg{transform:translate(3px,-3px)}
+.state{font-family:var(--mono);font-size:.75rem;font-weight:500;color:var(--ok)}
 
-        @keyframes blink {
-            0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(2.5); opacity: 0; }
-        }
+/* Skills */
+.skills{padding-top:0}
+.skills-list{margin-top:clamp(32px,5vw,56px)}
+.sk{display:grid;gap:12px;padding:22px 0;border-top:1px solid var(--line)}
+.sk:last-child{border-bottom:1px solid var(--line)}
+.sk dt{font-weight:500}
+.sk ul{display:flex;flex-wrap:wrap;gap:8px}
+.sk li{font-size:.875rem;padding:6px 12px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+.sk.explore li{border-style:dashed;background:transparent;color:var(--muted)}
 
-        /* মেইন ইনফো বক্স */
-        .profile-card {
-            background-color: #ffffff; 
-            border: 1px solid #e2e4e9;   
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            text-align: left;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04); 
-        }
+/* Process */
+.steps{margin-top:clamp(32px,5vw,56px);position:relative}
+.steps::before{content:"";position:absolute;left:5px;top:10px;bottom:10px;width:1px;background:var(--line)}
+.steps li{position:relative;padding:0 0 36px 36px}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{content:"";position:absolute;left:0;top:7px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.steps .n{font-family:var(--mono);font-size:.8125rem;color:var(--muted)}
+.steps h3{font-weight:500;font-size:1.375rem;letter-spacing:-.015em;margin:2px 0 6px}
+.steps p{color:var(--muted);max-width:44ch}
 
-        .card-section {
-            margin-bottom: 25px;
-        }
+/* Contact */
+.contact{padding-top:clamp(48px,8vw,96px)}
+.contact .big{font-size:clamp(2.25rem,7.5vw,5rem);line-height:1.04;letter-spacing:-.04em;margin:8px 0 24px;max-width:14ch}
+.contact p.d{color:var(--muted);font-size:1.0625rem;max-width:52ch}
+.icons{display:flex;gap:12px;margin-top:40px}
+.ic{position:relative;width:56px;height:56px;display:grid;place-items:center;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--text);transition:transform .25s var(--ease),border-color .2s,color .2s,box-shadow .2s}
+.ic svg{width:24px;height:24px}
+.ic:hover{transform:translateY(-3px);color:var(--accent);border-color:var(--accent);box-shadow:var(--shadow)}
+.ic::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%,4px);background:var(--text);color:var(--bg);font-size:.75rem;padding:4px 9px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+@media (hover:hover){.ic:hover::after,.ic:focus-visible::after{opacity:1;transform:translate(-50%,0)}}
+.ic.sm{width:44px;height:44px;border-radius:12px}
+.ic.sm svg{width:20px;height:20px}
 
-        .card-section:last-child {
-            margin-bottom: 0;
-        }
+/* Footer */
+footer{border-top:1px solid var(--line);padding:56px 0 32px}
+.f-grid{display:grid;gap:32px}
+.f-brand b{font-weight:600;font-size:.875rem;letter-spacing:.08em}
+.f-brand p{color:var(--muted);font-size:.9375rem;margin-top:6px}
+footer nav ul{display:flex;flex-wrap:wrap;gap:8px 24px}
+footer nav a{font-size:.875rem;color:var(--muted);transition:color .2s}
+footer nav a:hover{color:var(--text)}
+footer .icons{margin-top:0}
+.copy{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.8125rem}
 
-        .label-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #7a8293;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
+/* Reveal */
+.js .rv{opacity:0;transform:translateY(12px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
 
-        .info-detail {
-            color: #1a1d24;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-
-        /* নতুন নোট সেকশনের স্পেশাল স্টাইল */
-        .note-box {
-            background-color: #fdfbf7; /* হালকা ওয়ার্ম/ক্রিমি ব্যাকগ্রাউন্ড যেন সহজে নজরে পড়ে */
-            border: 1px solid #f1e6d2;
-            border-radius: 8px;
-            padding: 16px;
-            margin-top: 10px;
-        }
-
-        .note-box p {
-            font-size: 0.95rem;
-            color: #4a4d5c;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        .note-box p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* সাইড-বাই-সাইড লিংক গ্রিড */
-        .links-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 12px;
-        }
-
-        .link-block {
-            display: flex;
-            align-items: center;
-            background-color: #f8f9fa; 
-            border: 1px solid #e2e4e9;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.2s ease-in-out;
-        }
-
-        .link-block:hover {
-            border-color: #df8543; 
-            background-color: #ffffff;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        /* বাম পাশের আইকন হোল্ডার */
-        .block-icon-wrapper {
-            background-color: #edf0f2;
-            padding: 12px;
-            min-width: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right: 1px solid #e2e4e9;
-        }
-
-        .block-icon-wrapper svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        /* ডান পাশের লিংক পার্ট */
-        .block-target {
-            color: #5c6175;
-            text-decoration: none;
-            padding: 12px 14px;
-            font-size: 0.9rem;
-            font-weight: 400;
-            flex-grow: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            transition: color 0.15s;
-        }
-
-        .link-block:hover .block-target {
-            color: #df8543;
-            font-weight: 500;
-        }
-
-        /* ট্র্যাডিশনাল ফুটার */
-        footer {
-            font-size: 0.85rem;
-            color: #7a8293;
-            line-height: 1.5;
-        }
-
-        footer strong {
-            color: #2d3142;
-            font-weight: 600;
-        }
-
-        footer span {
-            display: block;
-            margin-top: 4px;
-            font-size: 0.8rem;
-            color: #a0a6b5;
-        }
-    </style>
+/* Responsive */
+@media (max-width:859px){
+  .links{position:fixed;inset:var(--nav) 0 auto 0;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;background:var(--bg);border-bottom:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .25s var(--ease),visibility .25s}
+  .links.open{opacity:1;visibility:visible;transform:none}
+  .links a.nl{font-size:1.0625rem;padding:16px 0;border-bottom:1px solid var(--line);color:var(--text)}
+  .links a.nl::after{display:none}
+  .links .status{margin-top:16px;align-self:flex-start}
+  .menu-btn{display:grid}
+  .bar .tools{margin-left:auto}
+}
+@media (min-width:560px){.strip dl{grid-template-columns:repeat(4,1fr)}.strip dl>div+div{padding-left:24px;border-left:1px solid var(--line)}}
+@media (min-width:860px){
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:72px}
+  .about-grid{grid-template-columns:1fr 1fr;gap:96px}
+  .builds li{grid-template-columns:44px minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:24px}
+  .builds .k{grid-row:auto}
+  .proj{grid-template-columns:1fr minmax(0,280px);padding:48px 0}
+  .sk{grid-template-columns:220px 1fr;align-items:center}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .steps::before{left:0;right:0;top:12px;bottom:auto;width:auto;height:1px}
+  .steps li{padding:36px 0 0}
+  .f-grid{grid-template-columns:1.2fr 1fr auto;align-items:start}
+}
+@media (min-width:1440px){:root{--wrap:1200px}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-9.2 6a1.7 1.7 0 0 1-1.6 0L2 7"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+</svg>
 
-    <div class="wrapper">
-        
-        <!-- প্রোফাইল আইকন -->
-        <div class="avatar-space">
-            <svg viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-        </div>
+<header id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Mahin Sheikh, back to top"><span class="mark" aria-hidden="true"><img src="logo.png" alt=""></span>MAHIN SHEIKH</a>
+    <nav class="links" id="menu" aria-label="Primary">
+      <a class="nl" href="#about">About</a>
+      <a class="nl" href="#work">Work</a>
+      <a class="nl" href="#skills">Skills</a>
+      <a class="nl" href="#contact">Contact</a>
+      <span class="status"><span class="dot" aria-hidden="true"></span>Open to collaborations</span>
+    </nav>
+    <div class="tools">
+      <button class="ib" id="theme" type="button" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="ib menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path id="mIcon" d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-        <!-- নামসহ লাইভ ব্যাজ -->
-        <div class="status-indicator">
-            <span class="live-dot"></span>
-            Mahin Sheikh
-        </div>
-
-        <!-- মেইন ইনফরমেশন কার্ড -->
-        <div class="profile-card">
-            
-            <!-- লোকেশন সেকশন -->
-            <div class="card-section">
-                <div class="label-title">📍 Current Location</div>
-                <div class="info-detail">Khulna, Bangladesh 🇧🇩</div>
-            </div>
-
-            <!-- নতুন নোট সেকশন (এখানে আরও জিনিস অ্যাড করতে পারবে) -->
-            <div class="card-section">
-                <div class="label-title">📝 Personal Note / Status</div>
-                <div class="note-box">
-                    <p>👋 Hey there! Welcome to my personal directory page. I am currently focusing on building clean, minimal web experiences and exploring backend workflows.</p>
-                    <p>🚀 Feel free to reach out through any of the channels below for collaborations or a quick chat!</p>
-					<p>      </p>
-                </div>
-            </div>
-
-            <!-- লিংক এবং কন্টাক্ট ডিরেক্টরি -->
-            <div class="card-section">
-                <div class="label-title">🔗 Directory &amp; Contact</div>
-                <div class="links-container">
-
-                    <!-- পার্সোনাল ইমেইল -->
-                    <div class="link-block">
-                        <div class="block-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="#E2001A"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                        </div>
-                        <a href="mailto:skmhn6@gmail.com" class="block-target">skmhn6@gmail.com</a>
-                    </div>
-
-                    <!-- বিজনেস ইমেইল -->
-                    <div class="link-block">
-                        <div class="block-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="#4682B4"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
-                        </div>
-                        <a href="mailto:hi@mahin.pp.ua" class="block-target">hi@mahin.pp.ua</a>
-                    </div>
-					
-					<!-- WhatsApp (WhatsApp Green) -->
-                    <div class="link-block">
-                        <div class="block-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.046c1.66.986 3.288 1.499 4.835 1.5l.006.001c5.393 0 9.778-4.381 9.782-9.774a9.71 9.71 0 0 0-2.86-6.924 9.716 9.716 0 0 0-6.915-2.863C6.046 1.4 1.66 5.786 1.657 11.179c-.001 1.642.435 3.243 1.264 4.642l-.1.365-1.054 3.849 3.942-1.033.36.214zM17.75 14.73c-.313-.155-1.854-.915-2.139-1.018-.286-.105-.494-.155-.701.155-.207.31-.803.102-1.011 1.017-.207.31-.414.34-.727.186-1.579-.788-2.614-1.403-3.666-3.21-.277-.476.277-.442.793-1.472.086-.176.043-.331-.022-.464-.064-.132-.55-1.32-.754-1.81-.198-.478-.4-.413-.55-.42-.142-.007-.306-.007-.471-.007-.166 0-.436.062-.664.31-.228.249-.871.851-.871 2.076 0 1.225.89 2.41 1.014 2.58.125.17 1.753 2.678 4.248 3.753.593.256 1.057.408 1.417.523.597.19 1.14.163 1.569.1.479-.072 1.472-.601 1.681-1.183.208-.581.208-1.082.145-1.182-.063-.105-.23-.158-.542-.315z"/></svg>
-                        </div>
-                        <a href="https://wa.me/8801729899948" target="_blank" class="block-target">+88 01729-899948</a>
-                    </div>
-
-                    <!-- টেলিগ্রাম -->
-                    <div class="link-block">
-                        <div class="block-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="#0088cc"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1 .22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.66-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.97-.74 3.79-1.65 6.32-2.74 7.59-3.27 3.61-1.5 4.36-1.76 4.85-1.77.11 0 .35.03.51.16.13.12.17.28.19.39.02.1.04.3.02.5z"/></svg>
-                        </div>
-                        <a href="https://t.me/SkMaHiN" target="_blank" class="block-target">t.me/SkMaHiN</a>
-                    </div>
-
-                    <!-- ফেসবুক -->
-                    <div class="link-block">
-                        <div class="block-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </div>
-                        <a href="https://facebook.com/skmahinx" target="_blank" class="block-target">facebook.com/skmahinx</a>
-                    </div>
-
-                    <!-- ইনস্টাগ্রাম -->
-                    <div class="link-block">
-                        <div class="block-icon-wrapper">
-                            <svg viewBox="0 0 24 24">
-                                <defs>
-                                    <linearGradient id="instagram-grad" x1="0%" y1="100%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#fdf497" />
-                                        <stop offset="5%" stop-color="#fdf497" />
-                                        <stop offset="45%" stop-color="#fd5949" />
-                                        <stop offset="60%" stop-color="#d6249f" />
-                                        <stop offset="100%" stop-color="#285AEB" />
-                                    </linearGradient>
-                                </defs>
-                                <path fill="url(#instagram-grad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-                            </svg>
-                        </div>
-                        <a href="https://instagram.com/skmahin.x" target="_blank" class="block-target">instagram.com/skmahin.x</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- ফুটার -->
-        <footer>
-            Created by <strong>Mahin Sheikh</strong>
-            <span>mahin.pp.ua &bull; 2026</span>
-        </footer>
+<main id="main">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">COLLEGE STUDENT · TECH ENTHUSIAST · WEB DEVELOPER</p>
+      <h1>I build clean, modern web experiences and practical digital solutions.</h1>
+      <p class="lead">I'm Mahin Sheikh, a college student and tech enthusiast from Bangladesh with a strong interest in web development, Cloudflare, automation, APIs, and modern backend systems.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">View My Work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#contact">Let's Talk</a>
+      </div>
+      <p class="status-line"><span class="dot" aria-hidden="true"></span>Open to collaborations</p>
     </div>
 
+    <div class="map-card">
+      <div class="map-top"><span class="mark" aria-hidden="true"><img src="logo.png" alt=""></span><div><b>Mahin Sheikh</b><small>web → edge → products</small></div></div>
+      <ol class="map" aria-label="Where my work happens, from the web to finished products">
+        <li><b>Web</b><small>HTML · CSS · JavaScript</small></li>
+        <li><b>Cloudflare</b><small>Workers · Pages · D1 · R2 · DNS</small></li>
+        <li><b>APIs</b><small>REST · Webhooks · Authentication</small></li>
+        <li><b>Automation</b><small>Telegram bots · Apps Script</small></li>
+        <li class="end"><b>Digital products</b><small>Study Tracker · R2CloudBot · Link Platform</small></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="strip" aria-label="At a glance">
+  <div class="wrap">
+    <dl>
+      <div><dt>Based in</dt><dd>Khulna, Bangladesh</dd></div>
+      <div><dt>Focus</dt><dd>Web Development · Cloudflare · Automation</dd></div>
+      <div><dt>Currently</dt><dd>College Student &amp; Tech Enthusiast</dd></div>
+      <div><dt>Available for</dt><dd>Collaborations &amp; Projects</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <p class="label">About</p>
+      <h2>Useful, polished, and reliable.</h2>
+      <div class="about-copy">
+        <p>I'm a college student who likes building for the web, and I'm most interested in the layer underneath: Cloudflare, APIs, automation, and backend systems.</p>
+        <p>I enjoy the tools that make the web faster and more efficient, and I learn best by building real things.</p>
+        <p>My approach is simple: understand the problem, keep the solution clean, and build something people can actually use.</p>
+      </div>
+    </div>
+    <div class="care rv">
+      <h3>What I care about</h3>
+      <ul>
+        <li><b>Simplicity</b><p>Complex systems should feel simple to the people using them.</p></li>
+        <li><b>Performance</b><p>Fast experiences are part of good product design.</p></li>
+        <li><b>Reliability</b><p>A beautiful interface is only useful when the system behind it works.</p></li>
+        <li><b>Purpose</b><p>Every feature should solve a real problem.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="build" id="build">
+  <div class="wrap">
+    <div class="build-head rv"><p class="label">What I build</p><h2>What I Build</h2></div>
+    <ul class="builds rv">
+        <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Web Applications</h3><p>Modern interfaces and practical web products.</p></li>
+        <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 1 0-1.3-8.8A6 6 0 0 0 4.7 12 3.5 3.5 0 0 0 6 19Z"/></svg></span><h3>Cloudflare Systems</h3><p>Workers, Pages, D1, R2, DNS and edge-based infrastructure.</p></li>
+        <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h8l-1 8 10-12h-8Z"/></svg></span><h3>Automation</h3><p>Bots, webhooks, APIs and workflow automation.</p></li>
+        <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><h3>Backend &amp; APIs</h3><p>Authentication, databases, APIs, server-side logic and integrations.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="work-head rv"><p class="label">Selected Work</p><h2>Things I've built.</h2></div>
+    <div class="rv">
+      <!-- PROJECT TEMPLATE (copy one <article>, edit the text):
+           - Status: replace the "Case study coming soon" span with <span class="state">ACTIVE</span> (or any status you can stand behind).
+           - Live site / case study: replace the span with
+             <a class="view" href="https://…" target="_blank" rel="noopener noreferrer">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+           - Technologies: one <li> per technology. -->
+      <article class="proj">
+        <div class="main"><h3>Study Tracker</h3><p>A private study management platform designed to organize subjects, study sessions, progress, and daily academic activity.</p></div>
+        <div class="side"><ul class="tags" aria-label="Technology"><li>Cloudflare</li><li>D1</li><li>Workers</li><li>JavaScript</li></ul>
+          <span class="view">Case study coming soon</span></div>
+      </article>
+      <article class="proj">
+        <div class="main"><h3>R2CloudBot</h3><p>A Telegram-based Cloudflare management and monitoring system focused on secure authentication, automation, auditing, and infrastructure operations.</p></div>
+        <div class="side"><ul class="tags" aria-label="Technology"><li>Cloudflare Workers</li><li>D1</li><li>Telegram API</li><li>TypeScript</li></ul>
+          <span class="view">Case study coming soon</span></div>
+      </article>
+      <article class="proj">
+        <div class="main"><h3>Personal Link Platform</h3><p>A lightweight link management platform built around Cloudflare infrastructure, custom domains, and API-driven workflows.</p></div>
+        <div class="side"><ul class="tags" aria-label="Technology"><li>Cloudflare Workers</li><li>APIs</li><li>JavaScript</li></ul>
+          <span class="view">Case study coming soon</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="rv"><p class="label">Skills</p><h2>Tools I work with.</h2></div>
+    <dl class="skills-list rv">
+      <div class="sk"><dt>Development</dt><dd><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>REST APIs</li></ul></dd></div>
+      <div class="sk"><dt>Cloud &amp; Infrastructure</dt><dd><ul><li>Cloudflare Workers</li><li>Cloudflare Pages</li><li>Cloudflare D1</li><li>Cloudflare R2</li><li>DNS</li></ul></dd></div>
+      <div class="sk"><dt>Automation</dt><dd><ul><li>Telegram Bots</li><li>Webhooks</li><li>API Automation</li><li>Google Apps Script</li></ul></dd></div>
+      <div class="sk"><dt>Tools</dt><dd><ul><li>Git</li><li>GitHub</li><li>Wrangler</li><li>VS Code</li></ul></dd></div>
+      <div class="sk explore"><dt>Exploring</dt><dd><ul><li>Backend Architecture</li><li>Automation Systems</li><li>Modern Web Applications</li></ul></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="rv"><p class="label">Process</p><h2>How I work.</h2></div>
+    <ol class="steps rv">
+      <li><span class="n">01</span><h3>Understand</h3><p>Understand the idea, requirements, and actual problem.</p></li>
+      <li><span class="n">02</span><h3>Plan</h3><p>Choose the simplest architecture that can solve it properly.</p></li>
+      <li><span class="n">03</span><h3>Build</h3><p>Develop the interface, backend, APIs, and integrations.</p></li>
+      <li><span class="n">04</span><h3>Refine</h3><p>Test, optimize, simplify, and polish the final experience.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap rv">
+    <p class="label">Have an idea?</p>
+    <h2 class="big">Let's build something useful.</h2>
+    <p class="d">Whether you have a project idea, collaboration opportunity, or simply want to talk about technology, feel free to reach out.</p>
+    <div class="icons">
+        <a class="ic" href="mailto:contact@skmahin.com" aria-label="Email Mahin" data-tip="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <a class="ic" href="https://wa.me/8801890007999" target="_blank" rel="noopener noreferrer" aria-label="Message Mahin on WhatsApp" data-tip="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg></a>
+        <a class="ic" href="https://t.me/skmahin" target="_blank" rel="noopener noreferrer" aria-label="Message Mahin on Telegram" data-tip="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-tg"/></svg></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand"><b>MAHIN SHEIKH</b><p>College Student · Tech Enthusiast · Web Developer</p></div>
+      <nav aria-label="Footer"><ul>
+        <li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+      </ul></nav>
+      <div class="icons">
+        <a class="ic sm" href="mailto:contact@skmahin.com" aria-label="Email Mahin" data-tip="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <a class="ic sm" href="https://wa.me/8801890007999" target="_blank" rel="noopener noreferrer" aria-label="Message Mahin on WhatsApp" data-tip="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg></a>
+        <a class="ic sm" href="https://t.me/skmahin" target="_blank" rel="noopener noreferrer" aria-label="Message Mahin on Telegram" data-tip="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-tg"/></svg></a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Mahin Sheikh</p>
+  </div>
+</footer>
+
+<script>
+const root=document.documentElement,$=id=>document.getElementById(id);
+$("theme").addEventListener("click",()=>{
+  const n=root.dataset.theme==="dark"?"light":"dark";root.dataset.theme=n;
+  try{localStorage.setItem("theme",n)}catch(e){}
+});
+
+const header=document.querySelector("header"),menu=$("menu"),btn=$("menuBtn");
+const onScroll=()=>header.classList.toggle("scrolled",scrollY>8);onScroll();
+addEventListener("scroll",onScroll,{passive:true});
+const setMenu=o=>{
+  menu.classList.toggle("open",o);btn.setAttribute("aria-expanded",o);
+  btn.setAttribute("aria-label",o?"Close menu":"Open menu");
+  $("mIcon").setAttribute("d",o?"M6 6l12 12M18 6 6 18":"M4 8h16M4 16h16");
+};
+btn.addEventListener("click",()=>setMenu(!menu.classList.contains("open")));
+menu.addEventListener("click",e=>{if(e.target.closest("a"))setMenu(false)});
+addEventListener("keydown",e=>{if(e.key==="Escape"&&menu.classList.contains("open")){setMenu(false);btn.focus()}});
+matchMedia("(min-width:860px)").addEventListener("change",()=>setMenu(false));
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll("a.nl")];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+["about","work","skills","contact"].forEach(id=>so.observe($(id)));
+</script>
 </body>
 </html>
